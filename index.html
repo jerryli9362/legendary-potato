@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Stephanie</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="intro-screen">
+        <h1 id="intro-text"></h1>
+    </div>
+
+    <div class="container" id="main-content" style="display: none;">
+        <img src="melody_ask.gif" alt="Cute My Melody" id="melody-img" class="character-img">
+        <h1>Will you be my Valentine?</h1>
+        <div class="buttons">
+            <button class="yes-btn" onclick="sayYes()">Yes!</button>
+            <button class="no-btn" onmouseover="moveButton()" onclick="moveButton()">No</button>
+        </div>
+    </div>
+
+    <div class="container" id="yay-screen" style="display: none;">
+        <img src="melody_happy.gif" alt="Happy Melody" class="character-img">
+        <h1>Yay! Thank you for being my valentine :) ❤️</h1>
+    </div>
+
+    <div class="container" id="slideshow-container" style="display: none;">
+        <h1 id="slide-caption">Let's look back at our 2025 :)</h1>
+        <div class="photo-frame">
+            <img id="slide-img" src="" alt="Our Memory">
+        </div>
+        <div class="buttons">
+            <button class="nav-btn" onclick="prevSlide()">❮ Back</button>
+            <button class="nav-btn" onclick="nextSlide()">Next ❯</button>
+        </div>
+    </div>
+
+    <div class="container" id="calendar-screen" style="display: none;">
+        <h1>It's a date! 📅</h1>
+        <h2>February 2026</h2>
+        
+        <div class="calendar">
+            <div class="day-name">Sun</div>
+            <div class="day-name">Mon</div>
+            <div class="day-name">Tue</div>
+            <div class="day-name">Wed</div>
+            <div class="day-name">Thu</div>
+            <div class="day-name">Fri</div>
+            <div class="day-name">Sat</div>
+
+            <div class="day">1</div>
+            <div class="day">2</div>
+            <div class="day">3</div>
+            <div class="day">4</div>
+            <div class="day">5</div>
+            <div class="day">6</div>
+            
+            <div class="day marked">7
+                <span class="heart">❤️</span>
+            </div>
+            
+            <div class="day">8</div>
+            <div class="day">9</div>
+            <div class="day">10</div>
+            <div class="day">11</div>
+            <div class="day">12</div>
+            <div class="day">13</div>
+            <div class="day">14</div>
+            <div class="day">15</div>
+            <div class="day">16</div>
+            <div class="day">17</div>
+            <div class="day">18</div>
+            <div class="day">19</div>
+            <div class="day">20</div>
+            <div class="day">21</div>
+            <div class="day">22</div>
+            <div class="day">23</div>
+            <div class="day">24</div>
+            <div class="day">25</div>
+            <div class="day">26</div>
+            <div class="day">27</div>
+            <div class="day">28</div>
+        </div>
+        <p class="final-note">Can't wait to see you!</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
